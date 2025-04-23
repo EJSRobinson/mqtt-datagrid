@@ -16,8 +16,8 @@
 #define NUM_LEDS_PER_PANEL (PANEL_WIDTH * PANEL_HEIGHT)
 
 // defined pins
-#define DATA_PIN_1 12
-#define DATA_PIN_2 27
+#define DATA_PIN_1 27
+#define DATA_PIN_2 12
 #define DATA_PIN_3 13
 #define DATA_PIN_4 14
 
@@ -32,7 +32,7 @@ enum Rotation { ROT_0, ROT_90, ROT_180, ROT_270 };
 Rotation panelRotations[NUM_PANELS] = {ROT_0, ROT_0, ROT_0, ROT_0};  // default: no rotation
 
 // ------------------- Logger -------------------
-bool diagnosticLoggingEnabled = true;  // Set to false to disable logging
+bool diagnosticLoggingEnabled = false;  // Set to false to disable logging
 unsigned long lastDiagnosticLogTime = 0;
 const unsigned long diagnosticInterval = 30000;  // 30 seconds
 
