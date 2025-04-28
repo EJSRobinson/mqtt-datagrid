@@ -88,7 +88,7 @@ void setup() {
   FastLED.addLeds<LED_TYPE, DATA_PIN_2, COLOR_ORDER>(leds[1], NUM_LEDS_PER_PANEL);
   FastLED.addLeds<LED_TYPE, DATA_PIN_3, COLOR_ORDER>(leds[2], NUM_LEDS_PER_PANEL);
   FastLED.addLeds<LED_TYPE, DATA_PIN_4, COLOR_ORDER>(leds[3], NUM_LEDS_PER_PANEL);
-  FastLED.setBrightness(5);
+  FastLED.setBrightness(255);
 
   setup_wifi();
 
